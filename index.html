@@ -6,13 +6,17 @@
     <title>03_Pond_AssignmentJS</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-300 p-10 flex flex-col items-center justify-center text-base font-sans text-gray-900 overscroll-none overflow-full">
+  <body
+    class="bg-gray-300 p-10 flex flex-col items-center justify-center text-base font-sans text-gray-900 overscroll-none overflow-full"
+  >
     <h1 class="text-3xl font-bold mb-6">Shopping Cart</h1>
-    <div class="flex flex-col space-y-4 ">
+    <div class="flex flex-col space-y-4">
       <h2 class="text-2xl font-bold text-gray-700">Add Item for Selection</h2>
       <form id="productForm" class="flex flex-wrap justify-center space-x-4">
         <div class="flex items-center justify-between">
-          <label for="productName" class="block text-lg font-medium">Product Name:</label>
+          <label for="productName" class="block text-lg font-medium"
+            >Product Name:</label
+          >
           <input
             type="text"
             id="productName"
@@ -34,7 +38,9 @@
           />
         </div>
         <div class="flex items-center justify-between">
-          <label for="image" class="block text-lg font-medium">Image URL:</label>
+          <label for="image" class="block text-lg font-medium"
+            >Image URL:</label
+          >
           <input
             type="url"
             id="image"
@@ -51,17 +57,19 @@
         </button>
       </form>
     </div>
+
     <section>
-    <div id="productDashboard" class="flex flex-col justify-center "></div>
-    <button
-      id="addbtn"
-      class="mx-2 my-2 h-auto flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-l font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 ;"
-    >
-      Add to Cart
-    </button>
+      <div id="productDashboard" class="flex flex-col justify-center"></div>
+      <div id="addbtn" clas="class="flex flex-wrap justify-center space-x-4" "></div>
     </section>
-    <div id="cart" class="flex flex-wrap justify-center space-x-4"></div>
+    <section>
+      <div
+        id="displayCart"
+        class="flex flex-wrap justify-center space-x-4"
+      ></div>
+      <div id="btnCal" class="flex flex-wrap justify-center space-x-4"></div>
+      <div id="totalSection" class="flex flex-wrap justify-center space-x-4"></div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
-
